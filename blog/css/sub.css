@@ -1,0 +1,65 @@
+.ft {
+    background-color: white;
+    box-shadow: 0 0 10px 1px black;
+    width: 42%;
+    text-align: center;
+}
+
+#t1 {
+    border-radius: 10px;
+    background-color: #333;
+    padding: 1em;
+    color: white;
+}
+
+.ttd {
+    padding: 1em;
+}
+
+.ttr {
+    border-bottom: #333 1px solid;
+}
+
+.ttr:hover {
+    background-color: #dfdfdf;
+}
+
+.input-group {
+    position: relative;
+}
+
+.in {
+    font: inherit;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px #343A40 solid;
+    outline: none;
+    padding-block: 5px;
+}
+
+.in::placeholder {
+    color: #343A40;
+    transition: opacity .25px;
+}
+
+.in:focus::placeholder {
+    opacity: 0;
+}
+
+.border-buttom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #7423f7;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s;
+}
+
+.in:focus+.border-buttom,
+.in:valid+.border-buttom {
+    transform: scaleX(1);
+}

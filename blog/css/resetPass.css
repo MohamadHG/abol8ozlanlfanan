@@ -1,0 +1,52 @@
+form {
+    border: black 1px groove;
+    margin-top: 10px;
+    margin-bottom: 41px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255, 0.5);
+    box-shadow: 0 0 5px 1px;
+}
+
+body {
+    background-color: #708090;
+}
+
+.input-group {
+    position: relative;
+}
+
+.in {
+    font: inherit;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px #343A40 solid;
+    outline: none;
+    padding-block: 5px;
+}
+
+.in::placeholder {
+    color: #343A40;
+    transition: opacity .25px;
+}
+
+.in:focus::placeholder {
+    opacity: 0;
+}
+
+.border-buttom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #7423f7;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s;
+}
+
+.in:focus+.border-buttom,
+.in:valid+.border-buttom {
+    transform: scaleX(1);
+}

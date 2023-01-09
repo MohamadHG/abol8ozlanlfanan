@@ -1,0 +1,99 @@
+#readmore {
+    margin: 10px auto;
+  }
+
+  #mine:hover {
+    text-decoration: underline;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    width: 450px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 6px;
+  }
+
+  .comment-box {
+    padding: 5px
+  }
+
+  .comment-area textarea {
+    resize: none;
+    border: 1px solid #ad9f9f
+  }
+
+  .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ffffff;
+    outline: 0;
+    box-shadow: 0 0 0 1px rgb(255, 0, 0) !important
+  }
+
+  .send {
+    color: #fff;
+    background-color: #ff0000;
+    border-color: #ff0000
+  }
+
+  .send:hover {
+    color: #fff;
+    background-color: #f50202;
+    border-color: #f50202
+  }
+
+  .rating {
+    display: flex;
+    margin-top: -10px;
+    flex-direction: row-reverse;
+    margin-left: -4px;
+    float: left
+  }
+
+  .rating>input {
+    display: none
+  }
+
+  .rating>label {
+    position: relative;
+    width: 19px;
+    font-size: 25px;
+    color: #ff0000;
+    cursor: pointer
+  }
+
+  .rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+  }
+
+  .rating>label:hover:before,
+  .rating>label:hover~label:before {
+    opacity: 1 !important
+  }
+
+  .rating>input:checked~label:before {
+    opacity: 1
+  }
+
+  .rating:hover>input:checked~label:before {
+    opacity: 0.4
+  }
+
+  #slimPic{
+    margin-top: 10px;
+    height: 20em;
+    width: 100%;
+    padding: 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://media.istockphoto.com/photos/open-book-and-steaming-cup-of-coffee-on-wooden-table-picture-id1334372779?b=1&k=20&m=1334372779&s=170667a&w=0&h=lfTulHKBslG9K9UFwiV6IaM9B5eRM7wIGgWYr-BNb9A=);
+    background-attachment: fixed;
+  }
